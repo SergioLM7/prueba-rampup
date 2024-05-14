@@ -15,12 +15,10 @@ const cuentaLetras = (frase, palabra) => {
   //Ejercicio 2
   //Algoritmo que imprime los números impares entre un número dado por el usuario y los siguientes 50 números
 
-  const numImpares = (numero) => {
-    let numeroFinal = Array.from(numero + 50);
-
-numeroFinal.forEach(() => {
-    if (numeroFinal[i]%2 !==0) {
-        console.log(numeroFinal)
+  const impresionImpar = (numero) => {
+    for (let i=numero; i<=numero+50; i++) {
+      if (i%2 !== 0) {
+          console.log(i);
+      }
+    }
     };
-});
-  };
